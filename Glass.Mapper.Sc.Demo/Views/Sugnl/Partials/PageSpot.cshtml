@@ -1,0 +1,16 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.Concrete.Landing>
+
+
+@{ var tag = IsInEditingMode ? "div" : "a";}
+
+<@tag class="tile triple doubleH" href="@Model.Url">
+    <div class="tile-content image">
+        @RenderImage(x=>x.IFeatureImage, new {width=380}, true)
+    </div>
+    <div class="brand bg-dark opacity">
+        <span class="text">
+            <strong>@Editable(x=>x.IPageTitlesShortTitle)</strong> - @Editable(x=>x.IPageTitleSubTitle) <br />
+            @Editable(x=>x.IFeatureAbstract)
+        </span>
+    </div>
+</@tag>

@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {E9ECA5DF-C672-4867-9034-0A3BDFFCE233}
+database: master
+path: /sitecore/content/Sugnl/Settings/QuickLinks/Twitter
+parent: {8D93D18B-CDC6-4028-8E79-E33597F70E39}
+name: Twitter
+master: {00000000-0000-0000-0000-000000000000}
+template: {6BA9EB58-2267-4FDE-8BB0-8E55670D61F0}
+templatekey: QuickLink
+
+----version----
+language: en
+version: 1
+revision: e23c52ba-2111-48b3-9887-a2e99c3c2149
+
+----field----
+field: {23AB0434-7586-4333-B5A9-3A1AC6FB2CC3}
+name: Icon
+key: icon
+content-length: 12
+
+icon-twitter
+----field----
+field: {63CD2C33-A35D-4375-BBE6-804104D58110}
+name: Link
+key: link
+content-length: 88
+
+<link linktype="external" url="https://twitter.com/mikeedwards83" anchor="" target="" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140411T161408
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e23c52ba-2111-48b3-9887-a2e99c3c2149
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140411T162409:635328302497458640
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

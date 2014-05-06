@@ -1,0 +1,25 @@
+﻿@using Glass.Mapper.Sc.Demo.Models.Parts
+@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Glass.Mapper.Sc.Demo.Models.Parts.SiteMap>
+
+<ul>
+    @renderItem(Model.Root)
+</ul>
+
+
+
+@helper renderItem(SiteMapItem item)
+{
+    <li>
+        <a href="@item.Url">@item.Name</a>
+        @if (item.Children.Any())
+        {
+            <ul>
+                @foreach (var child in item.Children)
+                {
+                 @renderItem(child);
+                }
+            </ul>
+        }
+
+    </li>
+}

@@ -1,0 +1,52 @@
+﻿@using Sitecore.Mvc
+@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Glass.Mapper.Sc.Demo.Models.Controllers.Search.SearchResults>
+
+
+<div>
+    @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+    {
+        
+
+        <div class="input-control text" data-role="input-control">
+            <input type="text" value="@Model.Query" name="q">
+            <button class="btn-clear" tabindex="-1" type="button"></button>
+        </div>
+        
+        <input type="submit" value="Search" name="searchSubmit" />
+    }
+
+</div>
+
+<div class="search">
+    
+    
+
+    @if (Model.Total > 0 || IsInEditingMode)
+    {
+        <div class="listview search-view">
+            <p>
+                @Editable(Model.Item, x=>x.SearchFor, x=>string.Format(x.SearchFor, Model.Query))
+            </p>
+            <p>
+                @Editable(Model.Item, x=>x.SearchSummary, x=>string.Format(x.SearchSummary, Model.Start, Model.End, Model.Total))
+            </p>
+            @foreach (var result in Model.Results)
+            {
+                <a href="#" class="list search-view-item">
+                    <div class="list-content">
+                        @RenderImage(x=>x.Item.SearchResultIcon, new {width=56, @class="icon"})
+                        <div class="data">
+                            <span class="list-title">@result.Title</span>
+                            <span class="list-remark">@result.Abstract</span>
+                        </div>
+                    </div>
+                </a>
+            }
+
+        </div>
+    }
+    else
+    {
+        <p>@Model.Item.SearchNoResults</p>
+    }
+</div>

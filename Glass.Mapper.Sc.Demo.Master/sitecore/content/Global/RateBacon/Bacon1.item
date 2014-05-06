@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {670A4DB7-DE02-4A7E-AE18-7E899B041EA8}
+database: master
+path: /sitecore/content/Global/RateBacon/Bacon1
+parent: {47B62EAC-552E-41C8-90F1-B9659A6AE879}
+name: Bacon1
+master: {00000000-0000-0000-0000-000000000000}
+template: {44DA61DC-9AC8-400E-9555-53E920F9A5D9}
+templatekey: RateBacon
+
+----version----
+language: en
+version: 1
+revision: 3e79e260-2abd-41db-9de2-c532f2d611a6
+
+----field----
+field: {5A87CC65-4510-4FF8-A358-EBDC284F7D1C}
+name: RateBaconImage1
+key: ratebaconimage1
+content-length: 58
+
+<image mediaid="{2B8012D1-4D03-4F67-A34A-ADBF12689984}" />
+----field----
+field: {79D2F3F9-A7A3-40CB-9E0D-0B1251E2902E}
+name: RateBaconImage2
+key: ratebaconimage2
+content-length: 58
+
+<image mediaid="{FFCC01C2-9065-404E-A8C8-664655476002}" />
+----field----
+field: {AB61DEE9-6FCD-46FD-8B86-776556543DA0}
+name: RateBaconImage3
+key: ratebaconimage3
+content-length: 58
+
+<image mediaid="{CC8D48A1-857B-440A-BD6C-36CE03B6DD8F}" />
+----field----
+field: {FE260F87-E7AC-49FC-A719-AAE2EC5BB05A}
+name: RateBaconImage4
+key: ratebaconimage4
+content-length: 58
+
+<image mediaid="{E855467C-9E93-433A-A7E5-38D30C6A1213}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140416T180037
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3e79e260-2abd-41db-9de2-c532f2d611a6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140416T181807:635332690878536361
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

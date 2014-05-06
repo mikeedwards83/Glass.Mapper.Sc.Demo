@@ -1,0 +1,8 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.Concrete.HomePage>
+
+@foreach (var child in Model.Featured)
+{
+    
+    {Html.RenderPartial("/Views/Sugnl/Partials/PageSpot.cshtml", child);}
+    
+}

@@ -1,0 +1,98 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Glass.Mapper.Sc.Demo.Models.Controllers.RateBacon.RateBaconIndex>
+<div class="listview rateBacon">
+    <div href="#" class="list">
+        <div class="list-content">
+            @RenderImage(x=>x.Item.RateBaconImage1, new {h=200, @class="icon"}, isEditable:true)
+            <div class="data">
+                <div class="rating large fg-yellow" data-role="rating" data-score="@((int)Model.Item.RateBaconRate1)"  data-stars="5" data-number="1">
+                </div>
+                <span class="score-hint ">Responses: <span class="rating-count"> @Model.Item.RateBaconCount1</span></span>
+                @if (Model.Item.RateBaconImage1.Id != Guid.Empty)
+                {
+                    <br />
+                     <span class="score-hint ">Artist: @Editable(x=>x.Item.RateBaconImage1.Artist)</span>
+                }
+            </div>
+        </div>
+    </div>
+    <div href="#" class="list">
+        <div class="list-content">
+            @RenderImage(x=>x.Item.RateBaconImage2, new {h=200, @class="icon"}, isEditable:true)
+            <div class="data">
+                <div class="rating large fg-yellow" data-role="rating" data-score="@((int)Model.Item.RateBaconRate2)"  data-stars="5" data-number="2">
+                </div>
+                <span class="score-hint ">Responses: <span class="rating-count"> @Model.Item.RateBaconCount2</span></span>
+                @if (Model.Item.RateBaconImage2.Id != Guid.Empty)
+                {
+                    <br />
+                     <span class="score-hint ">Artist: @Editable(x=>x.Item.RateBaconImage2.Artist)</span>
+                }
+            </div>
+        </div>
+    </div>
+    <div href="#" class="list">
+        <div class="list-content">
+            @RenderImage(x=>x.Item.RateBaconImage3, new {h=200, @class="icon"}, isEditable:true)
+            
+            <div class="data">
+                <div class="rating large fg-yellow" data-role="rating" data-score="@((int)Model.Item.RateBaconRate3)"  data-stars="5" data-number="3">
+                </div>
+                <span class="score-hint ">Responses: <span class="rating-count"> @Model.Item.RateBaconCount3</span></span>
+                @if (Model.Item.RateBaconImage3.Id != Guid.Empty)
+                {
+                    <br />
+                     <span class="score-hint ">Artist: @Editable(x=>x.Item.RateBaconImage3.Artist)</span>
+                }
+            </div>
+        </div>
+    </div>
+    <div href="#" class="list">
+        <div class="list-content">
+            @RenderImage(x=>x.Item.RateBaconImage4, new {h=200, @class="icon"}, isEditable:true)
+            <div class="data">
+                <div class="rating large fg-yellow" data-role="rating" data-score="@((int)Model.Item.RateBaconRate4)"  data-stars="5" data-number="4">
+                </div>
+                <span class="score-hint">Responses: <span class="rating-count"> @Model.Item.RateBaconCount4</span></span>
+                 @if (Model.Item.RateBaconImage4.Id != Guid.Empty)
+                {
+                    <br />
+                     <span class="score-hint ">Artist: @Editable(x=>x.Item.RateBaconImage4.Artist)</span>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function($) {
+        $(function () {
+            var id = "@Model.Item.Id";
+
+            $(".rating").rating({
+                click: function (value, rating) {
+                    
+                    var dataNumber = $(rating.element).attr("data-number");
+                    var parent = $(rating.element).parent();
+                    var count = $(parent).find(".rating-count");
+
+                    $.get("/rate/bacon/" + id+"/"+ dataNumber + "/" + value, function(data) {
+                        rating.rate(data.rating);
+                        count.html(data.count);
+                    });
+
+                    var not = $.Notify({
+                        caption: "Thanks for rating bacon",
+                        content: "Glass.Mapper, like bacon, is awesome",
+                        style:{background:'#1ba1e2', color:'white'},
+                        timeout: 10000 // 10 seconds
+                });
+
+                }
+               
+            });
+
+        });
+    })(jQuery);
+
+</script>
+

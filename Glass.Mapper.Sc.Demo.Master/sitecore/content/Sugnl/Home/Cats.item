@@ -1,0 +1,107 @@
+----item----
+version: 1
+id: {9B94D51E-814B-4938-A517-13B880E39BB7}
+database: master
+path: /sitecore/content/Sugnl/Home/Cats
+parent: {56778C19-24DE-43C9-865E-140EE02C976D}
+name: Cats
+master: {00000000-0000-0000-0000-000000000000}
+template: {020C8626-B8BA-4351-92EB-D1FF45800A59}
+templatekey: Landing
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 412
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{1C4C8A30-A03E-40BD-953A-4A02B2022BF1}" p:before="r[@uid='{8854A117-DF11-4004-817D-817ABC558FAC}']" s:ds="{206DD033-15F1-4451-A3D4-2521F542E0E1}" s:id="{0568007A-AEDF-4239-A297-6DF1FEA59022}" s:ph="main" /><r uid="{8854A117-DF11-4004-817D-817ABC558FAC}" s:id="{613B6A3A-BFD7-4173-B3B7-7756B96520EC}" s:ph="main" /></d></r>
+----version----
+language: en
+version: 1
+revision: f3e564f8-305a-4992-bf5b-4c8770fe9c20
+
+----field----
+field: {E279FB5A-76A4-4519-92B1-C6215717042A}
+name: IFeatureAbstract
+key: ifeatureabstract
+content-length: 122
+
+The domestic cat (Felis catus or Felis silvestris catus) is a small, usually furry, domesticated, and carnivorous mammal. 
+----field----
+field: {BCA36A19-5BBD-4F18-8F7C-3D936018BA0E}
+name: IFeatureImage
+key: ifeatureimage
+content-length: 58
+
+<image mediaid="{1ECD20D2-10F6-47C4-9ECD-E2B39A0C3589}" />
+----field----
+field: {8FB79BA2-269F-4266-B06E-463A7886ABB6}
+name: LandingContent
+key: landingcontent
+content-length: 1174
+
+Cats are similar in anatomy to the other felids, with strong, flexible bodies, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey. Cat senses fit a crepuscular and predatory ecological niche. Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. They can see in near darkness. Like most other mammals, cats have poorer color vision and a better sense of smell than humans.<br />
+<br />
+Despite being solitary hunters, cats are a social species, and cat communication includes the use of a variety of vocalizations (mewing, purring, trilling, hissing, growling and grunting) as well as cat pheromones, and types of cat-specific body language.[7]<br />
+<br />
+Cats have a rapid breeding rate. Under controlled breeding, they can be bred and shown as registered pedigree pets, a hobby known as cat fancy. Failure to control the breeding of pet cats by neutering, and the abandonment of former household pets, has resulted in large numbers of feral cats worldwide, requiring population control.[8]
+<p><a href="https://en.wikipedia.org/wiki/Beer">Wikipedia</a></p>
+<p><br />
+</p>
+----field----
+field: {73F291BC-4098-4702-B0DA-8B0416751E81}
+name: IPageTitlesLongTitle
+key: ipagetitleslongtitle
+content-length: 13
+
+Cats in bread
+----field----
+field: {ADF2C63C-D097-4AEC-B86F-571D772E441A}
+name: IPageTitleSubTitle
+key: ipagetitlesubtitle
+content-length: 19
+
+Butter isn't needed
+----field----
+field: {04E95463-A928-4CC0-B855-FB9F341C2221}
+name: IPageTitlesShortTitle
+key: ipagetitlesshorttitle
+content-length: 13
+
+Cats in bread
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140414T164928
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f3e564f8-305a-4992-bf5b-4c8770fe9c20
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140416T171500:635332653002684248
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {0E522558-3620-4FEB-9B36-74CB26A6E8D1}
+database: master
+path: /sitecore/content/Global/Comments/2014/04/16/11/11
+parent: {8B72DA0D-1145-45E9-A3D8-061CF3E4263D}
+name: 11
+master: {00000000-0000-0000-0000-000000000000}
+template: {ADB6CA4F-03EF-4F47-B9AC-9CE2BA53FF97}
+templatekey: Bucket
+
+----version----
+language: en
+version: 1
+revision: 5c73696e-666e-4524-9ef4-d4012e270614
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140416T111100
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5c73696e-666e-4524-9ef4-d4012e270614
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140416T111100:635332434608215648
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

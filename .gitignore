@@ -1,0 +1,12 @@
+Glass.Mapper.Sc.Demo.Core/bin/
+*.crunchsolution.cache
+*.ncrunchproject
+Glass.Mapper.Sc.Demo.Core/obj/
+Glass.Mapper.Sc.Demo.Master/bin/
+Glass.Mapper.Sc.Demo.Master/obj/
+Glass.Mapper.Sc.Demo.Tests/bin/
+Glass.Mapper.Sc.Demo.Tests/obj/
+Glass.Mapper.Sc.Demo/bin/
+Libs/Sitecore/
+Glass.Mapper.Sc.Demo/obj/
+*.user

@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {CF764A74-65C0-4CDE-9FF8-2A1FD1C576A6}
+database: master
+path: /sitecore/templates/Sugnl/Concrete/Landing/__Standard Values
+parent: {020C8626-B8BA-4351-92EB-D1FF45800A59}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {020C8626-B8BA-4351-92EB-D1FF45800A59}
+templatekey: Landing
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 355
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{57295BE0-2F16-4E65-BECD-1CB82C88232B}"><r id="{109C20B0-8F17-4E87-BD2C-CBC9D868073B}" ph="main" uid="{53671C7D-C72E-4877-806C-A82186C13B22}" /><r id="{533B7E8A-EFF1-41AE-9B76-578A6A9DB149}" ph="main" uid="{DA44ABCF-3946-4E1E-8762-3AAA53D23D36}" /></d></r>
+----version----
+language: en
+version: 1
+revision: 24a890fd-d9da-4cc4-8670-d3ab8d80bc6e
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140416T165445
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+24a890fd-d9da-4cc4-8670-d3ab8d80bc6e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140416T165502:635332641022192279
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,9 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@inherits GlassView<Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Common.Interface.IPageTitles>
+<h1>
+    @Editable(x=>x.IPageTitlesLongTitle)
+    @if (!string.IsNullOrEmpty(Model.IPageTitleSubTitle) || IsInEditingMode)
+    {
+        <small class="on-right"> @Editable(x=>x.IPageTitleSubTitle)</small>
+    }
+</h1>

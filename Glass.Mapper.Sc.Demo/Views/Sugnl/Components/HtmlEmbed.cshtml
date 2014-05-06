@@ -1,0 +1,10 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.Concrete.HtmlEmbed>
+
+<div class="panel">
+    <div class="panel-header bg-lightBlue fg-white">
+        @Editable(x=>x.HtmlEmbedTitle)
+    </div>
+    <div class="panel-content">
+            @Editable(x => x.HtmlEmbedHtml, x=> HttpUtility.HtmlDecode(x.HtmlEmbedHtml))
+    </div>
+</div>

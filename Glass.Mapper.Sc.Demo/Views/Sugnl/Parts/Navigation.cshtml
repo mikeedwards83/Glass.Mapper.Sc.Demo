@@ -1,0 +1,48 @@
+﻿ @using Sitecore.Shell.Framework.Commands.Carousel 
+@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Glass.Mapper.Sc.Demo.Core.Models.Parts.Navigation>
+
+<nav class="navigation-bar white border">
+                <div class="navigation-bar-content">
+                    <a href="/" class="element">@RenderImage(x=>x.Home.HomeSiteLogo, new {width=24})@Model.Home.HomeSiteName</a>
+                    <span class="element-divider"></span>
+
+                    <a class="pull-menu" href="#"></a>
+                    
+
+                    <div class="no-tablet-portrait">
+                        @foreach (var link in Model.Home.QuickLinks)
+                        {
+                            <a class="element brand" href="@link.Link.Url">
+                                <span class="@link.Icon"></span>
+                            </a>
+                        }
+                        <span class="element-divider"></span>
+                        
+                        @if (Model.Home.HomeSearch != null)
+                        {
+                            <div class="element input-element">
+                                
+                                <form action="@Model.Home.HomeSearch.Url">
+                                    
+                                    <div class="input-control text">
+                                        <input name="q" type="text" placeholder="@Model.Home.HomeSearch.SearchWaterMark">
+                                        <button class="btn-search"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        }
+                        
+                        
+                        
+
+                            
+                        
+                        <span class="element-divider place-right"></span>
+                        @using (BeginRenderLink(x => x.Home.DeveloperLink, new {@class = "element image-button image-left place-right", height=40}, isEditable:true))
+                        {
+                            @Editable(x=>x.Home.DeveloperName)
+                            @Editable(x=>x.Home.DeveloperImage, new {height=40})
+                        }
+                    </div>
+                </div>
+            </nav>

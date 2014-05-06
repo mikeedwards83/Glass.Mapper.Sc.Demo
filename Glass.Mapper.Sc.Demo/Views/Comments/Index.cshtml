@@ -1,0 +1,90 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Extensions
+@inherits GlassView<Glass.Mapper.Sc.Demo.Models.Controllers.Comments.CommentsIndex>
+
+
+<div class="grid">
+    <div class="row">
+        <div class="span10">
+            <h3>@Editable(x=>x.CommentsStatic.Title)</h3>
+            <div class="listview-outlook">
+                @foreach (var comment in Model.Comments)
+                {
+                    <div class="list">
+                        <div class="list-content">
+                            <span class="list-title">@comment.CommentName</span>
+                            <span class="list-subtitle">@comment.CommentMessage</span>
+                            <span class="list-remark">@comment.Created.ToString("hh:mm:ss dd-MM-yyyy")</span>
+                        </div>
+                    </div>
+                }
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="span8 offset1" >
+            
+            @if (Model.Success || IsInEditingMode)
+            {
+                <div class="balloon bottom">
+                    <div class="padding20">
+                            @Editable(x=>x.CommentsStatic.Thanks)
+                        </div>
+                    
+                </div>
+            }
+            else
+            {
+                using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+                {
+         
+                    <div class="panel">
+                        <div class="panel-header">
+                            @Editable(x=>x.CommentsStatic.YourComment)
+                        </div>
+                        <div class="panel-content">
+                            <label>Name</label>
+                            <div class="input-control text">
+                                @Html.TextBoxFor(x => x.Form.CommentName)
+                            </div>
+                                @Validation(Html.ValidationMessageFor(x => x.Form.CommentName))
+
+                            <label>Email</label>
+                            <div class="input-control text">
+                                @Html.TextBoxFor(x => x.Form.CommentEmail)
+                            </div>
+                                @Validation(Html.ValidationMessageFor(x => x.Form.CommentEmail))
+
+                            <label>Message</label>
+                            <div class="input-control textarea">
+                                @Html.TextAreaFor(x => x.Form.CommentMessage)
+                            </div>
+                                @Validation(Html.ValidationMessageFor(x => x.Form.CommentMessage))
+
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </div>
+         
+                }
+            }
+
+        </div>
+    </div>
+</div>
+
+@helper Validation(MvcHtmlString value)
+{
+    if (!string.IsNullOrEmpty(value.ToStringOrEmpty()))
+    {
+        <div class="notice marker-on-top bg-darkRed fg-white">
+            @value          
+        </div>
+    }
+
+}
+
+
+

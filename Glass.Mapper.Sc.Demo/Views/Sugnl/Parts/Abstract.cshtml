@@ -1,0 +1,12 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.Concrete.Landing>
+
+
+<div class="grid">
+    <div class="row">
+        <div class="span10">
+            @Editable(x=>x.IFeatureImage, new {h=200, @class="rounded polaroid margin10", style="float:left"})
+            @Editable(x=>x.LandingContent)
+
+        </div>
+    </div>
+</div>

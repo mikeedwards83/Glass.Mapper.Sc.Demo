@@ -1,0 +1,103 @@
+----item----
+version: 1
+id: {5ED1E31F-11C8-4044-8288-FD1B725F060C}
+database: master
+path: /sitecore/content/Sugnl/Home/Beer
+parent: {56778C19-24DE-43C9-865E-140EE02C976D}
+name: Beer
+master: {00000000-0000-0000-0000-000000000000}
+template: {020C8626-B8BA-4351-92EB-D1FF45800A59}
+templatekey: Landing
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 198
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{073B7678-40A9-4308-AAF5-7BD4A6E32B98}" s:id="{9A27082A-FE03-44B5-9B78-BBB5CF0EF421}" s:ph="main" /></d></r>
+----version----
+language: en
+version: 1
+revision: b94a1ab4-619f-46c7-b988-7083f67417de
+
+----field----
+field: {E279FB5A-76A4-4519-92B1-C6215717042A}
+name: IFeatureAbstract
+key: ifeatureabstract
+content-length: 119
+
+Beer is an alcoholic beverage produced by the saccharification of starch and fermentation of the resulting sugar.&nbsp;
+----field----
+field: {BCA36A19-5BBD-4F18-8F7C-3D936018BA0E}
+name: IFeatureImage
+key: ifeatureimage
+content-length: 58
+
+<image mediaid="{C7E0E900-339A-4206-AAFC-3B896423593F}" />
+----field----
+field: {8FB79BA2-269F-4266-B06E-463A7886ABB6}
+name: LandingContent
+key: landingcontent
+content-length: 1476
+
+<p>Beer is one of the world's oldest prepared beverages, possibly dating back to the early Neolithic or 9500 BC, when cereal was first farmed,[11] and is recorded in the written history of ancient Iraq and ancient Egypt.[12]Archaeologists speculate that beer was instrumental in the formation of civilisations.[13]<br />
+<br />
+The earliest known chemical evidence of barley beer dates to circa 3500&ndash;3100 BC from the site of Godin Tepe in the Zagros Mountains of western Iran.[14][15] Some of the earliest Sumerian writings contain references to beer; examples include a prayer to the goddess Ninkasi, known as "The Hymn to Ninkasi",[16] which served as both a prayer as well as a method of remembering the recipe for beer in a culture with few literate people,[9][10] and the ancient advice (Fill your belly. Day and night make merry) to Gilgamesh, recorded in the Epic of Gilgamesh, by the ale-wife Siduri may, at least in part, have referred to the consumption of beer.[17] The Ebla tablets, discovered in 1974 in Ebla, Syria and date back to 2500 BC, reveal that the city produced a range of beers, including one that appears to be named "Ebla" after the city.[18] A fermented beverage using rice and fruit was made in China around 7000 BC. Unlike sake, mold was not used to saccharify the rice (amylolytic fermentation); the rice was probably prepared for fermentation by mastication or malting.</p>
+<p><a href="https://en.wikipedia.org/wiki/Beer">Wikipedia</a></p>
+----field----
+field: {73F291BC-4098-4702-B0DA-8B0416751E81}
+name: IPageTitlesLongTitle
+key: ipagetitleslongtitle
+content-length: 15
+
+Beer is awesome
+----field----
+field: {ADF2C63C-D097-4AEC-B86F-571D772E441A}
+name: IPageTitleSubTitle
+key: ipagetitlesubtitle
+content-length: 22
+
+More beer == More code
+----field----
+field: {04E95463-A928-4CC0-B855-FB9F341C2221}
+name: IPageTitlesShortTitle
+key: ipagetitlesshorttitle
+content-length: 4
+
+Beer
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140414T164928
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b94a1ab4-619f-46c7-b988-7083f67417de
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140416T171404:635332652448274185
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

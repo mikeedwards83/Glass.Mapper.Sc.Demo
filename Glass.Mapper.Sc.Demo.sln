@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{6543616A-D08E-4E13-BE52-D203C39B8053}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Glass.Mapper.Sc.Demo.Master", "Glass.Mapper.Sc.Demo.Master\Glass.Mapper.Sc.Demo.Master.scproj", "{C2ACCEFA-C87F-484A-B951-08A7C5ACDA65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glass.Mapper.Sc.Demo.Core", "Glass.Mapper.Sc.Demo.Core\Glass.Mapper.Sc.Demo.Core.csproj", "{0F7735C8-6855-405D-9E28-3E62A799E5B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glass.Mapper.Sc.Demo", "Glass.Mapper.Sc.Demo\Glass.Mapper.Sc.Demo.csproj", "{65658D32-4FD8-4F44-BE1D-768561E6C1FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0FB4F412-7D58-4CF6-8F44-697EBD9C00C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glass.Mapper.Sc.Demo.Tests", "Glass.Mapper.Sc.Demo.Tests\Glass.Mapper.Sc.Demo.Tests.csproj", "{27AB37B8-7795-41C9-9C85-D137B8822087}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2ACCEFA-C87F-484A-B951-08A7C5ACDA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2ACCEFA-C87F-484A-B951-08A7C5ACDA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2ACCEFA-C87F-484A-B951-08A7C5ACDA65}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C2ACCEFA-C87F-484A-B951-08A7C5ACDA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2ACCEFA-C87F-484A-B951-08A7C5ACDA65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2ACCEFA-C87F-484A-B951-08A7C5ACDA65}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0F7735C8-6855-405D-9E28-3E62A799E5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7735C8-6855-405D-9E28-3E62A799E5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7735C8-6855-405D-9E28-3E62A799E5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7735C8-6855-405D-9E28-3E62A799E5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65658D32-4FD8-4F44-BE1D-768561E6C1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65658D32-4FD8-4F44-BE1D-768561E6C1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65658D32-4FD8-4F44-BE1D-768561E6C1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65658D32-4FD8-4F44-BE1D-768561E6C1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27AB37B8-7795-41C9-9C85-D137B8822087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27AB37B8-7795-41C9-9C85-D137B8822087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27AB37B8-7795-41C9-9C85-D137B8822087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27AB37B8-7795-41C9-9C85-D137B8822087}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2ACCEFA-C87F-484A-B951-08A7C5ACDA65} = {6543616A-D08E-4E13-BE52-D203C39B8053}
+		{0F7735C8-6855-405D-9E28-3E62A799E5B3} = {6543616A-D08E-4E13-BE52-D203C39B8053}
+		{65658D32-4FD8-4F44-BE1D-768561E6C1FA} = {6543616A-D08E-4E13-BE52-D203C39B8053}
+		{27AB37B8-7795-41C9-9C85-D137B8822087} = {0FB4F412-7D58-4CF6-8F44-697EBD9C00C0}
+	EndGlobalSection
+EndGlobal

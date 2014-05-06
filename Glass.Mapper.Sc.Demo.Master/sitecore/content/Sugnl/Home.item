@@ -1,0 +1,135 @@
+----item----
+version: 1
+id: {56778C19-24DE-43C9-865E-140EE02C976D}
+database: master
+path: /sitecore/content/Sugnl/Home
+parent: {1356AE14-84FF-47B6-90A1-D1073A8DD293}
+name: Home
+master: {00000000-0000-0000-0000-000000000000}
+template: {9303FD9F-90FB-4795-9121-219A014591CD}
+templatekey: HomePage
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 37
+
+<r xmlns:p="p" xmlns:s="s" p:p="1" />
+----version----
+language: en
+version: 1
+revision: ac5188a6-0d7e-4338-b37d-e153aaa38a59
+
+----field----
+field: {6D944193-DA45-405C-91BE-74F9A57E7CC9}
+name: HomeSiteName
+key: homesitename
+content-length: 16
+
+Glass.Mapper MVC
+----field----
+field: {C480CBFC-74D6-49F5-A894-43F53D122032}
+name: HomeSiteLogo
+key: homesitelogo
+content-length: 58
+
+<image mediaid="{9352BE72-ADEA-4499-ADC8-884E806B7CEE}" />
+----field----
+field: {C23AB561-0C56-41A2-8FF7-9DB9D9991ABD}
+name: HomeSearch
+key: homesearch
+content-length: 38
+
+{8D43C943-2BAB-4DF0-A70A-13ED8D718249}
+----field----
+field: {73F291BC-4098-4702-B0DA-8B0416751E81}
+name: IPageTitlesLongTitle
+key: ipagetitleslongtitle
+content-length: 16
+
+Sugnl Glass Demo
+----field----
+field: {ADF2C63C-D097-4AEC-B86F-571D772E441A}
+name: IPageTitleSubTitle
+key: ipagetitlesubtitle
+content-length: 9
+
+MVC Style
+----field----
+field: {04E95463-A928-4CC0-B855-FB9F341C2221}
+name: IPageTitlesShortTitle
+key: ipagetitlesshorttitle
+content-length: 10
+
+Sugnl Demo
+----field----
+field: {F4CB2BE2-E502-4059-9D10-B76562BE8E8F}
+name: DeveloperImage
+key: developerimage
+content-length: 58
+
+<image mediaid="{7A5AF9B9-62D2-4480-BA62-EC6561B0DABF}" />
+----field----
+field: {0E88778C-6275-409E-86D8-9F105942C871}
+name: DeveloperName
+key: developername
+content-length: 12
+
+Mike Edwards
+----field----
+field: {0F0AB893-371D-4A44-8CB6-D7B67F9DE6C1}
+name: DeveloperLink
+key: developerlink
+content-length: 104
+
+<link linktype="external" url="https://www.linkedin.com/profile/view?id=47197657" anchor="" target="" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140408T074227
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ac5188a6-0d7e-4338-b37d-e153aaa38a59
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140414T122654:635330752145747472
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
