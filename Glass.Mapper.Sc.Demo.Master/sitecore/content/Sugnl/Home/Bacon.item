@@ -19,7 +19,7 @@ content-length: 244
 ----version----
 language: en
 version: 1
-revision: 6fdd7b69-53d0-404a-8a6e-838d5a9b5d13
+revision: ed992b44-cfda-4dad-816d-ec58fb790d5a
 
 ----field----
 field: {E279FB5A-76A4-4519-92B1-C6215717042A}
@@ -39,31 +39,31 @@ content-length: 58
 field: {8FB79BA2-269F-4266-B06E-463A7886ABB6}
 name: LandingContent
 key: landingcontent
-content-length: 1563
+content-length: 1549
 
-Bacon is prepared from several different cuts of meat. It is usually made from side and back cuts of pork,[4] except in the United States, where it is almost always prepared from pork belly (typically referred to as "streaky", "fatty", or "American style" outside of the US and Canada). The side cut has more meat and less fat than the belly. Bacon may be prepared from either of two distinct back cuts: fatback, which is almost pure fat, and pork loin, which is very lean. Bacon-cured pork loin is known as back bacon.<br />
-<br />
-Uncooked rashers of streaky pork belly bacon<br />
-<br />
-Packaged smoked bacon<br />
-Bacon may be eaten smoked, boiled, fried, baked, or grilled, or used as a minor ingredient to flavour dishes. Bacon is also used for barding and larding roasts, especially game, including venison and pheasant. The word is derived from the Old High German bacho, meaning "buttock", "ham" or "side of bacon", and cognate with the Old French bacon.[5][6]<br />
-<br />
+Bacon is prepared from several different cuts of meat. It is usually made from side and back cuts of pork,[4] except in the United States, where it is almost always prepared from pork belly (typically referred to as "streaky", "fatty", or "American style" outside of the US and Canada). The side cut has more meat and less fat than the belly. Bacon may be prepared from either of two distinct back cuts: fatback, which is almost pure fat, and pork loin, which is very lean. Bacon-cured pork loin is known as back bacon.<br>
+<br>
+Uncooked rashers of streaky pork belly bacon<br>
+<br>
+Packaged smoked bacon<br>
+Bacon may be eaten smoked, boiled, fried, baked, or grilled, or used as a minor ingredient to flavour dishes. Bacon is also used for barding and larding roasts, especially game, including venison and pheasant. The word is derived from the Old High German bacho, meaning "buttock", "ham" or "side of bacon", and cognate with the Old French bacon.[5][6]<br>
+<br>
 In continental Europe, part of the pig is not usually smoked like bacon is in the United States; it is used primarily in cubes (lardons) as a cooking ingredient, valued both as a source of fat and for its flavour. In Italy, this is called pancetta and is usually cooked in small cubes or served uncooked and thinly sliced as part of an antipasto.
 <p style="margin: 0.5em 0px; line-height: 21px; color: #252525; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; background-color: #ffffff;"><a href="https://en.wikipedia.org/wiki/Beer">Wikipedia</a></p>
 ----field----
 field: {73F291BC-4098-4702-B0DA-8B0416751E81}
 name: IPageTitlesLongTitle
 key: ipagetitleslongtitle
-content-length: 23
+content-length: 24
 
-Bacon the heavenly food
+Bacon the heavenly food 
 ----field----
 field: {ADF2C63C-D097-4AEC-B86F-571D772E441A}
 name: IPageTitleSubTitle
 key: ipagetitlesubtitle
-content-length: 13
+content-length: 19
 
-Nom, nom, nom
+Nom, nom, nom, code
 ----field----
 field: {04E95463-A928-4CC0-B855-FB9F341C2221}
 name: IPageTitlesShortTitle
@@ -84,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6fdd7b69-53d0-404a-8a6e-838d5a9b5d13
+ed992b44-cfda-4dad-816d-ec58fb790d5a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140416T180048:635332680487638115
+20140429T080711:635343556311059799
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

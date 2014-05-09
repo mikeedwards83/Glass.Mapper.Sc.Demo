@@ -1,0 +1,94 @@
+----item----
+version: 1
+id: {EAD0341A-30B7-4854-A962-04FD9B7C97A7}
+database: master
+path: /sitecore/content/Sugnl/Home/SiteMap
+parent: {56778C19-24DE-43C9-865E-140EE02C976D}
+name: SiteMap
+master: {00000000-0000-0000-0000-000000000000}
+template: {020C8626-B8BA-4351-92EB-D1FF45800A59}
+templatekey: Landing
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 215
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{8854A117-DF11-4004-817D-817ABC558FAC}" s:ds="" s:id="{DC350C3E-3829-484C-A829-3C106DAD193F}" s:par="" s:ph="main" /></d></r>
+----version----
+language: en
+version: 1
+revision: f81697b5-ffa1-4f2c-ac0f-eb3208a7b25a
+
+----field----
+field: {E279FB5A-76A4-4519-92B1-C6215717042A}
+name: IFeatureAbstract
+key: ifeatureabstract
+content-length: 127
+
+Beer in England pre-dates other alcoholic drinks produced in England, and has been brewed continuously since prehistoric times.
+----field----
+field: {BCA36A19-5BBD-4F18-8F7C-3D936018BA0E}
+name: IFeatureImage
+key: ifeatureimage
+content-length: 58
+
+<image mediaid="{6167EF24-9069-4EBA-8A88-A12FEE8AEE3E}" />
+----field----
+field: {8FB79BA2-269F-4266-B06E-463A7886ABB6}
+name: LandingContent
+key: landingcontent
+content-length: 793
+
+Beer in England pre-dates other alcoholic drinks produced in England, and has been brewed continuously since prehistoric times.[citation needed] As a beer brewing country, England is known for its top fermented cask beer (also called real ale) which finishes maturing in the cellar of the pub rather than at the brewery and is served with only natural carbonation.
+English beer styles include bitter, mild, brown ale and old ale. Stout, porter and India Pale Ale were also originally brewed in London. Lager style beer has increased considerably in popularity since the mid 20th century. Other modern developments include consolidation of large brewers into multinational corporations; growth of beer consumerism; expansion of microbreweries and increased interest in bottle conditioned beers.
+----field----
+field: {73F291BC-4098-4702-B0DA-8B0416751E81}
+name: IPageTitlesLongTitle
+key: ipagetitleslongtitle
+content-length: 12
+
+British Beer
+----field----
+field: {ADF2C63C-D097-4AEC-B86F-571D772E441A}
+name: IPageTitleSubTitle
+key: ipagetitlesubtitle
+content-length: 30
+
+Awesome since the dawn of time
+----field----
+field: {04E95463-A928-4CC0-B855-FB9F341C2221}
+name: IPageTitlesShortTitle
+key: ipagetitlesshorttitle
+content-length: 7
+
+British
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140414T164928
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f81697b5-ffa1-4f2c-ac0f-eb3208a7b25a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140509T180128:635352552886800900
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

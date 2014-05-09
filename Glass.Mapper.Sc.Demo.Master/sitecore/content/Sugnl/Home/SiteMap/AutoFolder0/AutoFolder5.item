@@ -1,0 +1,30 @@
+----item----
+version: 1
+id: {E1A789DF-2237-473B-9748-1DF68EC956D0}
+database: master
+path: /sitecore/content/Sugnl/Home/SiteMap/AutoFolder0/AutoFolder5
+parent: {14581E66-A794-4F46-A4B4-F27EC4D38990}
+name: AutoFolder5
+master: {00000000-0000-0000-0000-000000000000}
+template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+templatekey: Folder
+
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140509T174557
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140509T174557:635352543572007998

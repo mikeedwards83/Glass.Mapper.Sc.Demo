@@ -1,0 +1,1534 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Glass.Mapper.Sc.Razor</name>
+    </assembly>
+    <members>
+        <member name="T:Glass.Mapper.Sc.Razor.CachedView">
+            <summary>
+            CachedView
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.CachedView.ViewContent">
+            <summary>
+            Gets or sets the content of the view.
+            </summary>
+            <value>
+            The content of the view.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.CachedView.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>
+            The type.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.CachedView.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.ContextRazorView">
+            <summary>
+            Class ContextRazorView
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.ContextRazorView.CreateChildControls">
+            <summary>
+            Called by the ASP.NET page framework to notify server controls that use composition-based implementation to create any child controls they contain in preparation for posting back or rendering.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.ContextRazorView.DoRender(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter"></see> object, which writes the content to be rendered on the client.
+            </summary>
+            <param name="output">The <see cref="T:System.Web.UI.HtmlTextWriter"></see> object that receives the server control content.</param>
+            <remarks>When developing custom server controls, you can override this method to generate content for an ASP.NET page.</remarks>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.ContextRazorView.TypeName">
+            <summary>
+            Gets or sets the name of the type.
+            </summary>
+            <value>The name of the type.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.ContextRazorView.AssemblyName">
+            <summary>
+            Gets or sets the name of the assembly.
+            </summary>
+            <value>The name of the assembly.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.ContextRazorView.Context">
+            <summary>
+            Gets the <see cref="T:System.Web.HttpContext" /> object associated with the server control for the current Web request.
+            </summary>
+            <value>
+            The context.
+            </value>
+            <returns>The specified <see cref="T:System.Web.HttpContext" /> object associated with the current request.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Dynamic.DynamicField">
+            <summary>
+            Class DynamicField
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Dynamic.DynamicField.#ctor(System.String,Sitecore.Data.Items.Item)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Razor.Dynamic.DynamicField"/> class.
+            </summary>
+            <param name="fieldName">Name of the field.</param>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Dynamic.DynamicField.Editable">
+            <summary>
+            Editables this instance.
+            </summary>
+            <returns>RawString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Dynamic.DynamicField.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents this instance.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Dynamic.DynamicField.op_Implicit(Glass.Mapper.Sc.Razor.Dynamic.DynamicField)~System.String">
+            <summary>
+            Performs an implicit conversion from <see cref="T:Glass.Mapper.Sc.Razor.Dynamic.DynamicField"/> to <see cref="T:System.String"/>.
+            </summary>
+            <param name="field">The field.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Dynamic.DynamicField.GetFieldContent(System.Boolean)">
+            <summary>
+            Gets the content of the field.
+            </summary>
+            <param name="editable">if set to <c>true</c> [editable].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Dynamic.RazorDynamicItem">
+            <summary>
+            Class RazorDynamicItem
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Dynamic.RazorDynamicItem.#ctor(Sitecore.Data.Items.Item)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Dynamic.DynamicItem"/> class.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Dynamic.RazorDynamicItem.GetField(System.String,Sitecore.Data.Items.Item)">
+            <summary>
+            Gets the field.
+            </summary>
+            <param name="fieldName">Name of the field.</param>
+            <param name="item">The item.</param>
+            <returns>System.Object.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Dynamic.RazorDynamicItem.CreateNew(Sitecore.Data.Items.Item)">
+            <summary>
+            Creates the new.
+            </summary>
+            <param name="item">The item.</param>
+            <returns>DynamicItem.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.ExtensionMethods">
+            <summary>
+            Class ExtensionMethods
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.ExtensionMethods.RawString(System.String)">
+            <summary>
+            Raws the string.
+            </summary>
+            <param name="target">The target.</param>
+            <returns>RawString.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.GlassHtmlFacade">
+            <summary>
+            Class GlassHtmlFacade
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.#ctor(Glass.Mapper.Sc.ISitecoreContext,System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Razor.GlassHtmlFacade"/> class.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="writer">The writer.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object)">
+            <summary>
+            Editables the specified target.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="target">The target.</param>
+            <param name="field">The field.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>RawString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Object)">
+            <summary>
+            Editables the specified target.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="target">The target.</param>
+            <param name="field">The field.</param>
+            <param name="standardOutput">The standard output.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>RawString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderImage``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+            Renders an image allowing simple page editor support
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model that contains the image field</param>
+            <param name="field">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <param name="parameters">Image parameters, e.g. width, height</param>
+            <param name="isEditable">Indicates if the field should be editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.BeginRenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+            Render HTML for a link with contents
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.String)">
+            <summary>
+            Render HTML for a link
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <param name="contents">Content to override the default decription or item name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.EditFrame(System.String,System.String)">
+            <summary>
+            Edits the frame.
+            </summary>
+            <param name="buttons">The buttons.</param>
+            <param name="dataSource">The data source.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderPartial``1(System.String,``0)">
+            <summary>
+            Renders the partial.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="path">The path.</param>
+            <param name="model">The model.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderingParameters``1(System.String)">
+            <summary>
+            Converts rendering parameters to a concrete type. Use this method if you have defined the template ID on the 
+            model configuration.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderingParameters``1(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Converts rendering parameters to a concrete type. Use this method if you have defined the template ID on the 
+            model configuration.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderImage(Glass.Mapper.Sc.Fields.Image)">
+            <summary>
+            Renders the image.
+            </summary>
+            <param name="image">The image.</param>
+            <returns>RawString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderImage(Glass.Mapper.Sc.Fields.Image,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Renders the image.
+            </summary>
+            <param name="image">The image.</param>
+            <param name="attributes">The attributes.</param>
+            <returns>RawString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderLink(Glass.Mapper.Sc.Fields.Link)">
+            <summary>
+            Renders the link.
+            </summary>
+            <param name="link">The link.</param>
+            <returns>RawString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderLink(Glass.Mapper.Sc.Fields.Link,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Renders the link.
+            </summary>
+            <param name="link">The link.</param>
+            <param name="attributes">The attributes.</param>
+            <returns>RawString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.GlassHtmlFacade.RenderLink(Glass.Mapper.Sc.Fields.Link,System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            Renders the link.
+            </summary>
+            <param name="link">The link.</param>
+            <param name="attributes">The attributes.</param>
+            <param name="contents">The contents.</param>
+            <returns>RawString.</returns>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.GlassHtmlFacade.SitecoreContext">
+            <summary>
+            Gets the sitecore context.
+            </summary>
+            <value>
+            The sitecore context.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.GlassHtmlFacade.GlassHtml">
+            <summary>
+            Gets or sets the glass HTML.
+            </summary>
+            <value>
+            The glass HTML.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.GlassHtmlFacade.IsInEditingMode">
+            <summary>
+            Indicates if the current page is in Page Editing mode
+            </summary>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.GlassRazorSettings">
+            <summary>
+            Class GlassRazorModuleLoader
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.GlassRazorSettings.ContextName">
+            <summary>
+            The context name
+            </summary>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.IRazorControl">
+            <summary>
+            Interface IRazorControl
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.IRazorControl.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>The view.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.IRazorControl.ContextName">
+            <summary>
+            Gets or sets the name of the context.
+            </summary>
+            <value>The name of the context.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Model.GlassBehindRazor">
+            <summary>
+            Class GlassBehindRazor
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassBehindRazor.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassBehindRazor.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>The view.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassBehindRazor.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassBehindRazor.Assembly">
+            <summary>
+            Gets or sets the assembly.
+            </summary>
+            <value>The assembly.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Model.GlassDynamicRazor">
+            <summary>
+            Class GlassDynamicRazor
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassDynamicRazor.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassDynamicRazor.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>The view.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Model.GlassRazorFolder">
+            <summary>
+            Class GlassRazorFolder
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassRazorFolder.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+            <value>The id.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Model.GlassTypedRazor">
+            <summary>
+            Class GlassTypedRazor
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassTypedRazor.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassTypedRazor.View">
+            <summary>
+            Gets or sets the view.
+            </summary>
+            <value>The view.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassTypedRazor.Code">
+            <summary>
+            Gets or sets the code.
+            </summary>
+            <value>The code.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassTypedRazor.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Model.GlassTypedRazor.Assembly">
+            <summary>
+            Gets or sets the assembly.
+            </summary>
+            <value>The assembly.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Pipelines.GetRenderer.AbstractGetViewRendering">
+            <summary>
+            Class AbstractGetViewRendering
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Pipelines.GetRenderer.AbstractGetViewRendering.Process(Sitecore.Mvc.Pipelines.Response.GetRenderer.GetRendererArgs)">
+            <summary>
+            Processes the specified args.
+            </summary>
+            <param name="args">The args.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Pipelines.GetRenderer.AbstractGetViewRendering.GetRenderer(Sitecore.Mvc.Presentation.Rendering,Sitecore.Mvc.Pipelines.Response.GetRenderer.GetRendererArgs)">
+            <summary>
+            Gets the renderer.
+            </summary>
+            <param name="rendering">The rendering.</param>
+            <param name="args">The args.</param>
+            <returns>Sitecore.Mvc.Presentation.Renderer.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Pipelines.GetRenderer.GetBehindViewRendering">
+            <summary>
+            Class GetBehindViewRendering
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Pipelines.GetRenderer.GetBehindViewRendering.GetRenderer(Sitecore.Mvc.Presentation.Rendering,Sitecore.Mvc.Pipelines.Response.GetRenderer.GetRendererArgs)">
+            <summary>
+            Gets the renderer.
+            </summary>
+            <param name="rendering">The rendering.</param>
+            <param name="args">The args.</param>
+            <returns>Sitecore.Mvc.Presentation.Renderer.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Pipelines.GetRenderer.GetDynamicViewRendering">
+            <summary>
+            Class GetDynamicViewRendering
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Pipelines.GetRenderer.GetDynamicViewRendering.GetRenderer(Sitecore.Mvc.Presentation.Rendering,Sitecore.Mvc.Pipelines.Response.GetRenderer.GetRendererArgs)">
+            <summary>
+            Gets the renderer.
+            </summary>
+            <param name="rendering">The rendering.</param>
+            <param name="args">The args.</param>
+            <returns>Sitecore.Mvc.Presentation.Renderer.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Pipelines.GetRenderer.GetTypedViewRendering">
+            <summary>
+            Class GetTypedViewRendering
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Pipelines.GetRenderer.GetTypedViewRendering.GetRenderer(Sitecore.Mvc.Presentation.Rendering,Sitecore.Mvc.Pipelines.Response.GetRenderer.GetRendererArgs)">
+            <summary>
+            Gets the renderer.
+            </summary>
+            <param name="rendering">The rendering.</param>
+            <param name="args">The args.</param>
+            <returns>Sitecore.Mvc.Presentation.Renderer.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Pipelines.Initialise.CacheWarmer">
+            <summary>
+            CacheWarmer
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Pipelines.Initialise.CacheWarmer.Process(Sitecore.Pipelines.PipelineArgs)">
+            <summary>
+            Processes the specified args.
+            </summary>
+            <param name="args">The args.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Pipelines.Initialise.CacheWarmer.Warm">
+            <summary>
+            Warms this instance.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Pipelines.Initialise.CacheWarmer.WarmDb(Sitecore.Data.Database)">
+            <summary>
+            Warms the db.
+            </summary>
+            <param name="db">The db.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Pipelines.Initialise.CacheWarmer.WarmType(Sitecore.Data.Items.Item)">
+            <summary>
+            Warms the type.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.RawString">
+            <summary>
+            Class RawString
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RawString.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Razor.RawString"/> class.
+            </summary>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RawString.op_Implicit(Glass.Mapper.Sc.Razor.RawString)~System.String">
+            <summary>
+            Performs an implicit conversion from <see cref="T:Glass.Mapper.Sc.Razor.RawString"/> to <see cref="T:System.String"/>.
+            </summary>
+            <param name="raw">The raw.</param>
+            <returns>The result of the conversion.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.RazorException">
+            <summary>
+            Class RazorException
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RazorException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.ApplicationException" /> class with a specified error message.
+            </summary>
+            <param name="message">A message that describes the error.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RazorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.ApplicationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception. If the <paramref name="innerException" /> parameter is not a null reference, the current exception is raised in a catch block that handles the inner exception.</param>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.RenderingTypes.AbstractCachingRenderingType">
+            <summary>
+            Class AbstractCachingRenderingType
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.AbstractCachingRenderingType.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Glass.Mapper.Sc.Razor.RenderingTypes.AbstractCachingRenderingType"/> class.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.AbstractCachingRenderingType.GetControlType(System.String,System.Func{System.String,System.Type})">
+            <summary>
+            Gets the type of the control.
+            </summary>
+            <param name="typeName">Name of the type.</param>
+            <param name="typeLoader">The type loader.</param>
+            <returns>Type.</returns>
+            <exception cref="T:System.NullReferenceException">Could not find type {0} for Razor view..Formatted(typeName)</exception>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.RenderingTypes.AbstractCachingRenderingType.LoadedTypes">
+            <summary>
+            Gets the loaded types.
+            </summary>
+            <value>The loaded types.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.RenderingTypes.BehindRazorRenderingType">
+            <summary>
+            Class BehindRazorRenderingType
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.BehindRazorRenderingType.GetControl(System.Collections.Specialized.NameValueCollection,System.Boolean)">
+            <summary>
+            Gets the control.
+            </summary>
+            <param name="parameters">The parameters.</param>
+            <param name="assert">if set to <c>true</c> this instance performs asserts.</param>
+            <returns>The created control.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.BehindRazorRenderingType.CreateControl(System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates the control.
+            </summary>
+            <param name="view">The view.</param>
+            <param name="type">The type.</param>
+            <param name="assembly">The assembly.</param>
+            <param name="contextName">Name of the context.</param>
+            <returns>Sitecore.Web.UI.WebControl.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.RenderingTypes.PartialRazorRenderingType">
+            <summary>
+            Class TypedRazorRenderingType
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.PartialRazorRenderingType.GetControl(System.Collections.Specialized.NameValueCollection,System.Boolean)">
+            <summary>
+            Gets the control.
+            </summary>
+            <param name="parameters">The parameters.</param>
+            <param name="assert">if set to <c>true</c> this instance performs asserts.</param>
+            <returns>The created control.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.PartialRazorRenderingType.CreateControl(System.String,System.String)">
+            <summary>
+            Creates the control.
+            </summary>
+            <param name="view">The view.</param>
+            <param name="contextName">Name of the context.</param>
+            <returns>Sitecore.Web.UI.WebControl.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.RenderingTypes.DynamicRazorRenderingType">
+            <summary>
+            Class DynamicRazorRenderingType
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.DynamicRazorRenderingType.GetControl(System.Collections.Specialized.NameValueCollection,System.Boolean)">
+            <summary>
+            Gets the control.
+            </summary>
+            <param name="parameters">The parameters.</param>
+            <param name="assert">if set to <c>true</c> this instance performs asserts.</param>
+            <returns>The created control.</returns>
+            <exception cref="T:Glass.Mapper.Sc.Razor.RazorException">Parameters does not contain parameter 'Name'</exception>
+            <exception cref="T:System.NullReferenceException">Parameter 'Name' is null or empty</exception>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.DynamicRazorRenderingType.CreateControl(System.String,System.String)">
+            <summary>
+            Creates the control.
+            </summary>
+            <param name="view">The view.</param>
+            <param name="contextName">Name of the context.</param>
+            <returns>System.Web.UI.WebControls.WebControl.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.RenderingTypes.TypedRazorRenderingType">
+            <summary>
+            Class TypedRazorRenderingType
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.TypedRazorRenderingType.GetControl(System.Collections.Specialized.NameValueCollection,System.Boolean)">
+            <summary>
+            Gets the control.
+            </summary>
+            <param name="parameters">The parameters.</param>
+            <param name="assert">if set to <c>true</c> this instance performs asserts.</param>
+            <returns>The created control.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.RenderingTypes.TypedRazorRenderingType.CreateControl(System.String,System.String)">
+            <summary>
+            Creates the control.
+            </summary>
+            <param name="view">The view.</param>
+            <param name="contextName">Name of the context.</param>
+            <returns>
+            Sitecore.Web.UI.WebControl.
+            </returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1">
+            <summary>
+            Class AbtractFileCreateWizard
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.FileName">
+            <summary>
+            The file name
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.FileLocationTreeview">
+            <summary>
+            The file location treeview
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.FileDataContext">
+            <summary>
+            The file data context
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.ItemDataContext">
+            <summary>
+            The item data context
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.ItemTreeView">
+            <summary>
+            The item tree view
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.Master">
+            <summary>
+            The master
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1"/> class.
+            </summary>
+            <exception cref="T:Glass.Mapper.Sc.Razor.RazorException">Exception creating Sitecore Service, have you called the method GlassRazorModuleLoader.Load()?</exception>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.OnLoad(System.EventArgs)">
+            <summary>
+            Raises the load event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs" /> instance containing the event data.</param>
+            <remarks>This method notifies the server control that it should perform actions common to each HTTP
+            request for the page it is associated with, such as setting up a database query. At this
+            stage in the page lifecycle, server controls in the hierarchy are created and initialized,
+            view state is restored, and form controls reflect client-side data. Use the IsPostBack
+            property to determine whether the page is being loaded in response to a client postback,
+            or if it is being loaded and accessed for the first time.</remarks>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.HandleMessage(Sitecore.Web.UI.Sheer.Message)">
+            <summary>
+            Handles the message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.GetRelativeFilePath">
+            <summary>
+            Gets the relative file path.
+            </summary>
+            <returns>System.String.</returns>
+            <exception cref="T:System.NullReferenceException">File location item was null</exception>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.FileExists">
+            <summary>
+            Files the exists.
+            </summary>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.ItemCanWrite">
+            <summary>
+            Items the can write.
+            </summary>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.CreateCsHtmlFile(System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            Creates the cs HTML file.
+            </summary>
+            <param name="collection">The collection.</param>
+            <param name="templatePath">The template path.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.CreateFile(System.Collections.Specialized.NameValueCollection,System.String,System.String)">
+            <summary>
+            Creates the file.
+            </summary>
+            <param name="collection">The collection.</param>
+            <param name="templatePath">The template path.</param>
+            <param name="targetPath">The target path.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.CreateItem(`0)">
+            <summary>
+            Creates the item.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.Extension">
+            <summary>
+            Gets or sets the extension.
+            </summary>
+            <value>The extension.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.DefaultFileLocation">
+            <summary>
+            Gets or sets the default file location.
+            </summary>
+            <value>The default file location.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.Database">
+            <summary>
+            Gets or sets the database.
+            </summary>
+            <value>The database.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Shell.AbtractFileCreateWizard`1.ItemRoot">
+            <summary>
+            Gets or sets the item root.
+            </summary>
+            <value>The item root.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Shell.Commands.CreateBehindRazor">
+            <summary>
+            Class CreateBehindRazor
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Commands.CreateBehindRazor.Execute(Sitecore.Shell.Framework.Commands.CommandContext)">
+            <summary>
+            Executes the command in the specified context.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Commands.CreateBehindRazor.Run(Sitecore.Web.UI.Sheer.ClientPipelineArgs)">
+            <summary>
+            Runs the specified args.
+            </summary>
+            <param name="args">The args.</param>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Shell.Commands.CreateDynamicRazor">
+            <summary>
+            Class CreateDynamicRazor
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Commands.CreateDynamicRazor.Execute(Sitecore.Shell.Framework.Commands.CommandContext)">
+            <summary>
+            Executes the command in the specified context.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Commands.CreateDynamicRazor.Run(Sitecore.Web.UI.Sheer.ClientPipelineArgs)">
+            <summary>
+            Runs the specified args.
+            </summary>
+            <param name="args">The args.</param>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Shell.Commands.CreateTypedRazor">
+            <summary>
+            Class CreateTypedRazor
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Commands.CreateTypedRazor.Execute(Sitecore.Shell.Framework.Commands.CommandContext)">
+            <summary>
+            Executes the command in the specified context.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Commands.CreateTypedRazor.Run(Sitecore.Web.UI.Sheer.ClientPipelineArgs)">
+            <summary>
+            Runs the specified args.
+            </summary>
+            <param name="args">The args.</param>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Shell.Wizards.BehindWizard">
+            <summary>
+            Class BehindWizard
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.Wizards.BehindWizard.TemplateCsHtml">
+            <summary>
+            The template cs HTML
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.Wizards.BehindWizard.TemplateCsHtmlCs">
+            <summary>
+            The template cs HTML cs
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Wizards.BehindWizard.ActivePageChanging(System.String,System.String@)">
+            <summary>
+            Called when the active page is changing.
+            </summary>
+            <param name="page">The page that is being left.</param>
+            <param name="newpage">The new page that is being entered.</param>
+            <returns>True, if the change is allowed, otherwise false.</returns>
+            <contract>
+              <requires name="page" condition="not null" />
+              <requires name="newpage" condition="not null" />
+              </contract>
+            <remarks>Set the newpage parameter to another page ID to control the
+            path through the wizard pages.</remarks>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Wizards.BehindWizard.ActivePageChanged(System.String,System.String)">
+            <summary>
+            Called when the active page has been changed.
+            </summary>
+            <param name="page">The page that has been entered.</param>
+            <param name="oldPage">The page that was left.</param>
+            <contract>
+              <requires name="page" condition="not null" />
+              <requires name="oldPage" condition="not null" />
+              </contract>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Shell.Wizards.BehindWizard.Namespace">
+            <summary>
+            Gets or sets the namespace.
+            </summary>
+            <value>The namespace.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Shell.Wizards.BehindWizard.AssemblyName">
+            <summary>
+            Gets or sets the name of the assembly.
+            </summary>
+            <value>The name of the assembly.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Shell.Wizards.DynamicWizard">
+            <summary>
+            Class DynamicWizard
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.Wizards.DynamicWizard.TemplateCsHtml">
+            <summary>
+            The template cs HTML
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Wizards.DynamicWizard.ActivePageChanging(System.String,System.String@)">
+            <summary>
+            Called when the active page is changing.
+            </summary>
+            <param name="page">The page that is being left.</param>
+            <param name="newpage">The new page that is being entered.</param>
+            <returns>True, if the change is allowed, otherwise false.</returns>
+            <contract>
+              <requires name="page" condition="not null" />
+              <requires name="newpage" condition="not null" />
+              </contract>
+            <remarks>Set the newpage parameter to another page ID to control the
+            path through the wizard pages.</remarks>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Wizards.DynamicWizard.ActivePageChanged(System.String,System.String)">
+            <summary>
+            Called when the active page has been changed.
+            </summary>
+            <param name="page">The page that has been entered.</param>
+            <param name="oldPage">The page that was left.</param>
+            <contract>
+              <requires name="page" condition="not null" />
+              <requires name="oldPage" condition="not null" />
+              </contract>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Shell.Wizards.TypedWizard">
+            <summary>
+            Class TypedWizard
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.Shell.Wizards.TypedWizard.TemplateCsHtml">
+            <summary>
+            The template cs HTML
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Wizards.TypedWizard.ActivePageChanging(System.String,System.String@)">
+            <summary>
+            Called when the active page is changing.
+            </summary>
+            <param name="page">The page that is being left.</param>
+            <param name="newpage">The new page that is being entered.</param>
+            <returns>True, if the change is allowed, otherwise false.</returns>
+            <contract>
+              <requires name="page" condition="not null" />
+              <requires name="newpage" condition="not null" />
+              </contract>
+            <remarks>Set the newpage parameter to another page ID to control the
+            path through the wizard pages.</remarks>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Shell.Wizards.TypedWizard.ActivePageChanged(System.String,System.String)">
+            <summary>
+            Called when the active page has been changed.
+            </summary>
+            <param name="page">The page that has been entered.</param>
+            <param name="oldPage">The page that was left.</param>
+            <contract>
+              <requires name="page" condition="not null" />
+              <requires name="oldPage" condition="not null" />
+              </contract>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.SitecoreIds">
+            <summary>
+            SitecoreIds
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.SitecoreIds.GlassBehindRazorId">
+            <summary>
+            The glass behind razor id
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.SitecoreIds.GlassDynamicRazorId">
+            <summary>
+            The glass dynamic razor id
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.SitecoreIds.GlassTypedRazorId">
+            <summary>
+            The glass typed razor id
+            </summary>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.ViewManager">
+            <summary>
+            ViewManager
+            </summary>
+        </member>
+        <member name="F:Glass.Mapper.Sc.Razor.ViewManager.ViewLoader">
+            <summary>
+            The view loader
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.ViewManager.#cctor">
+            <summary>
+            Initializes the <see cref="T:Glass.Mapper.Sc.Razor.ViewManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.ViewManager.OnChanged(System.Object,System.IO.FileSystemEventArgs)">
+            <summary>
+            Called when [changed].
+            </summary>
+            <param name="source">The source.</param>
+            <param name="e">The <see cref="T:System.IO.FileSystemEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.ViewManager.GetFullPath(System.String)">
+            <summary>
+            Gets the full path.
+            </summary>
+            <param name="viewPath">The view path.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.ViewManager.GetRazorView(System.String)">
+            <summary>
+            Gets the razor view.
+            </summary>
+            <param name="viewPath">The view path.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.ViewManager.UpdateCache(System.String,System.Func{System.String,System.String})">
+            <summary>
+            Updates the cache.
+            </summary>
+            <param name="viewPath">The view path.</param>
+            <param name="viewLoader">The view loader.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.NullReferenceException">Could not find file {0}..Formatted(viewPath)</exception>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Mvc.AbstractViewRendering">
+            <summary>
+            Class AbstractViewRendering
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Mvc.AbstractViewRendering.Path">
+            <summary>
+            Gets or sets the path.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Mvc.AbstractViewRendering.ContextName">
+            <summary>
+            Gets or sets the name of the context.
+            </summary>
+            <value>The name of the context.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Mvc.AbstractViewRendering.DataSource">
+            <summary>
+            Gets or sets the data source.
+            </summary>
+            <value>The data source.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Mvc.BehindViewRenderer">
+            <summary>
+            Class BehindViewRenderer
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Mvc.BehindViewRenderer.Render(System.IO.TextWriter)">
+            <summary>
+            Renders the specified writer.
+            </summary>
+            <param name="writer">The writer.</param>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Mvc.BehindViewRenderer.Type">
+            <summary>
+            Gets or sets the type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Mvc.BehindViewRenderer.Assembly">
+            <summary>
+            Gets or sets the assembly.
+            </summary>
+            <value>The assembly.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Mvc.DynamicViewRenderer">
+            <summary>
+            Class DynamicViewRenderer
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Mvc.DynamicViewRenderer.Render(System.IO.TextWriter)">
+            <summary>
+            Renders the specified writer.
+            </summary>
+            <param name="writer">The writer.</param>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Mvc.TypedViewRenderer">
+            <summary>
+            Class TypedViewRenderer
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Mvc.TypedViewRenderer.Render(System.IO.TextWriter)">
+            <summary>
+            Renders the specified writer.
+            </summary>
+            <param name="writer">The writer.</param>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Mvc.ViewDataContainer">
+            <summary>
+            Class ViewDataContainer
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Mvc.ViewDataContainer.ViewData">
+            <summary>
+            Gets or sets the view data dictionary.
+            </summary>
+            <value>The view data.</value>
+            <returns>The view data dictionary.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1">
+            <summary>
+            Class AbstractRazorControl
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.GetModel">
+            <summary>
+            Put your logic to create your model here
+            </summary>
+            <returns>`0.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.GetDataSourceOrContextItem">
+            <summary>
+            Returns either the data source item or if no data source is specified the context item
+            </summary>
+            <returns>Item.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.GetCachingID">
+            <summary>
+            Get caching identifier. Must be implemented by controls that supports caching.
+            </summary>
+            <returns>System.String.</returns>
+            <remarks>If an empty string is returned, the control will not be cached.</remarks>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.DoRender(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter"></see> object, which writes the content to be rendered on the client.
+            </summary>
+            <param name="output">The <see cref="T:System.Web.UI.HtmlTextWriter"></see> object that receives the server control content.</param>
+            <exception cref="T:Glass.Mapper.Sc.Razor.RazorException"></exception>
+            <remarks>When developing custom server controls, you can override this method to generate content for an ASP.NET page.</remarks>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.Expand">
+            <summary>
+            Expands this instance.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.GetRenderingParameters``1">
+            <summary>
+            Converts rendering parameters to a concrete type. Use this method if you have defined the template ID on the 
+            model configuration.
+            </summary>
+            <typeparam name="TK"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.Profiler">
+            <summary>
+            Gets or sets the profiler.
+            </summary>
+            <value>
+            The profiler.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.ViewManager">
+            <summary>
+            Gets the view manager.
+            </summary>
+            <value>
+            The view manager.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.Placeholders">
+            <summary>
+            A list of placeholders to render on the page.
+            </summary>
+            <value>The placeholders.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.ViewData">
+            <summary>
+            View data
+            </summary>
+            <value>The view data.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.View">
+            <summary>
+            The path to the Razor view
+            </summary>
+            <value>The view.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.ContextName">
+            <summary>
+            The name of the Glass Context to use
+            </summary>
+            <value>The name of the context.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.Model">
+            <summary>
+            The model to pass to the Razor view.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.SitecoreContext">
+            <summary>
+            Gets the sitecore service.
+            </summary>
+            <value>The sitecore service.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.AbstractRazorControl`1.GlassHtml">
+            <summary>
+            Gives access to the GlassHtml helper class
+            </summary>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.DynamicControl">
+            <summary>
+            Class DynamicControl
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.DynamicControl.GetModel">
+            <summary>
+            Gets the model.
+            </summary>
+            <returns>dynamic.</returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.DynamicTemplate">
+            <summary>
+            Class DynamicTemplate
+            </summary>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1">
+            <summary>
+            Class TemplateBase
+            </summary>
+            <typeparam name="TModel"></typeparam>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.ITemplateBase">
+            <summary>
+            ITemplateBase
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.ITemplateBase.Configure(Glass.Mapper.Sc.ISitecoreContext,System.Web.Mvc.ViewDataDictionary,Sitecore.Web.UI.WebControl)">
+            <summary>
+            Configures the specified sitecore context.
+            </summary>
+            <param name="sitecoreContext">The sitecore context.</param>
+            <param name="viewData">The view data.</param>
+            <param name="parentControl">The parent control.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.Configure(Glass.Mapper.Sc.ISitecoreContext,System.Web.Mvc.ViewDataDictionary,Sitecore.Web.UI.WebControl)">
+            <summary>
+            Configures the specified service.
+            </summary>
+            <param name="sitecoreContext">The sitecore context.</param>
+            <param name="viewData">The view data.</param>
+            <param name="parentControl">The parent control.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.RenderHolder(System.String)">
+            <summary>
+            Renders the holder.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.Placeholder(System.String)">
+            <summary>
+            Placeholders the specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>IEncodedString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object)">
+            <summary>
+            Editables the specified target.
+            </summary>
+            <typeparam name="T">The type of the t1.</typeparam>
+            <param name="target">The target.</param>
+            <param name="field">The field.</param>
+            <param name="parameters">Parameters to control field rendering</param>
+            <returns>IEncodedString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Object)">
+            <summary>
+            Editables the specified target.
+            </summary>
+            <typeparam name="T">The type of the t1.</typeparam>
+            <param name="target">The target.</param>
+            <param name="field">The field.</param>
+            <param name="standardOutput">The standard output.</param>
+            <param name="parameters">Parameters to control field rendering</param>
+            <returns>
+            IEncodedString.
+            </returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.RenderImage``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+            Renders an image allowing simple page editor support
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="target">The model with the field</param>
+            <param name="field">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <param name="parameters">Image parameters, e.g. width, height</param>
+            <param name="isEditable">Indicates if the field should be editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.RenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.String)">
+            <summary>
+            Render HTML for a link
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <param name="contents">Content to override the default decription or item name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.Editable(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object)">
+            <summary>
+            Editables the specified field.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="parameters">Parameters to control field rendering</param>
+            <returns>RawString.</returns>
+            <exception cref="T:System.NullReferenceException">
+            No field set
+            or
+            No model set
+            </exception>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.Editable(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Object)">
+            <summary>
+            Editables the specified field.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="standardOutput">The standard output.</param>
+            <param name="parameters">Parameters to control field rendering</param>        
+            <returns>
+            RawString.
+            </returns>
+            <exception cref="T:System.NullReferenceException">No field set
+            or
+            No model set</exception>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.RenderImage(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+            Renders an image allowing simple page editor support
+            </summary>
+            <param name="field">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <param name="parameters">Image parameters, e.g. width, height</param>
+            <param name="isEditable">Indicates if the field should be editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.BeginRenderLink(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+            Render HTML for a link with contents
+            </summary>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.RenderLink(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean,System.String)">
+            <summary>
+            Render HTML for a link
+            </summary>
+            <typeparam>The model type
+                <name>T</name>
+            </typeparam>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <param name="contents">Content to override the default decription or item name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.GetRenderingParameters``1">
+            <summary>
+            Converts rendering parameters to a concrete type. Use this method if you have defined the template ID on the 
+            model configuration.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.RenderImage(Glass.Mapper.Sc.Fields.Image)">
+            <summary>
+            Renders the image.
+            </summary>
+            <param name="image">The image.</param>
+            <returns>IEncodedString.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.RenderImage(Glass.Mapper.Sc.Fields.Image,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Renders the image.
+            </summary>
+            <param name="image">The image.</param>
+            <param name="attributes">The attributes.</param>
+            <returns>IEncodedString.</returns>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.SitecoreContext">
+            <summary>
+            Gets or sets the sitecore context.
+            </summary>
+            <value>
+            The sitecore context.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.ViewData">
+            <summary>
+            Gets the view data.
+            </summary>
+            <value>The view data.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.GlassHtml">
+            <summary>
+            Gets the glass HTML.
+            </summary>
+            <value>The glass HTML.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.Html">
+            <summary>
+            Gets the HTML.
+            </summary>
+            <value>The HTML.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.Placeholders">
+            <summary>
+            Gets the placeholders.
+            </summary>
+            <value>The placeholders.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.ParentControl">
+            <summary>
+            Gets the parent control.
+            </summary>
+            <value>The parent control.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.IsInEditingMode">
+            <summary>
+            Gets a value indicating whether this instance is in editing mode.
+            </summary>
+            <value>
+            <c>true</c> if this instance is in editing mode; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateBase`1.IsPostback">
+            <summary>
+            Gets a value indicating whether this instance is in editing mode.
+            </summary>
+            <value>
+            <c>true</c> if this instance is in editing mode; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.GlassRazorControl">
+            <summary>
+            Use this control to add a razor rendering to a sublayout
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.GlassRazorControl.OnLoad(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.Load" /> event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.GlassRazorControl.DoRender(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter"></see> object, which writes the content to be rendered on the client.
+            </summary>
+            <param name="output">The <see cref="T:System.Web.UI.HtmlTextWriter"></see> object that receives the server control content.</param>
+            <remarks>
+            When developing custom server controls, you can override this method to generate content for an ASP.NET page.
+            </remarks>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.GlassRazorControl.Path">
+            <summary>
+            The path to the razor rendering in Sitecore
+            </summary>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.PartialControl">
+            <summary>
+            PartialControl
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.TypedControl">
+            <summary>
+            Class TypedControl
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.TypedControl.GetModel">
+            <summary>
+            Gets the model.
+            </summary>
+            <returns>`0.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.PartialControl.SetModel(System.Object)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="model">The model.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Razor.Web.Ui.PartialControl.GetModel">
+            <summary>
+            Gets the model.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.TemplateModel`1">
+            <summary>
+            Class TemplateModel
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateModel`1.Control">
+            <summary>
+            Gets or sets the control.
+            </summary>
+            <value>The control.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Razor.Web.Ui.TemplateModel`1.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Razor.Web.Ui.TypedTemplate`1">
+            <summary>
+            Class TypedTemplate
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+    </members>
+</doc>

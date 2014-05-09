@@ -7,14 +7,14 @@ using Sitecore.Shell.Framework.Commands;
 
 namespace Glass.Mapper.Sc.Demo.Models.Parts
 {
-    [SitecoreType]
+    [SitecoreType( Cachable = true)]
     public class SiteMap
     {
         [SitecoreQuery("/sitecore/content")]
         public virtual SiteMapItem Root { get; set; }
     }
 
-    [SitecoreType(AutoMap = true)]
+    [SitecoreType(AutoMap = true, Cachable = true)]
     public class SiteMapItem
     {
         public virtual string Url { get; set; }

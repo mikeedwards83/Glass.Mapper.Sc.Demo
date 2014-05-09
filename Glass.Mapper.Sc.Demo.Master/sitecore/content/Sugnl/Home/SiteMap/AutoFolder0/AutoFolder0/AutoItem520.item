@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {AE48A420-2CBF-4E56-B263-2F962A6E142E}
+database: master
+path: /sitecore/content/Sugnl/Home/SiteMap/AutoFolder0/AutoFolder0/AutoItem520
+parent: {813B96DA-6962-4511-8B03-D1F90E99E751}
+name: AutoItem520
+master: {00000000-0000-0000-0000-000000000000}
+template: {76036F5E-CBCE-46D1-AF0A-4143F9B557AA}
+templatekey: Sample Item
+
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {75577384-3C97-45DA-A847-81B00500E250}
+name: Title
+key: title
+content-length: 30
+
+consumer organisation based in
+----field----
+field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
+name: Text
+key: text
+content-length: 113
+
+St Albans, England, whose main aims are promoting real ale, real cider and the traditional British pub. It is now
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140509T174556
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140509T174556:635352543566347497

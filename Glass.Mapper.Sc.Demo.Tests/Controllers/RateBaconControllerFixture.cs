@@ -32,14 +32,9 @@ namespace Glass.Mapper.Sc.Demo.Tests.Controllers
             //Act
             var result = controller.Rate(itemId, ratingNumber, rating);
 
-
             //Assert
-
             Assert.AreEqual(rating, item.RateBaconRate1);
             Assert.AreEqual(1, item.RateBaconCount1);
-         
-
-
         }
     }
 }

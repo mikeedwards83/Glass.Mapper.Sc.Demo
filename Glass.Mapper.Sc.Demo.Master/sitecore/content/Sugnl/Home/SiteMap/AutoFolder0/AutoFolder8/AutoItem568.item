@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {4E0227BB-9DB0-467A-ADE5-7F587C56483B}
+database: master
+path: /sitecore/content/Sugnl/Home/SiteMap/AutoFolder0/AutoFolder8/AutoItem568
+parent: {54B09DB5-6F40-4AEA-B7CA-06865BB5CFB8}
+name: AutoItem568
+master: {00000000-0000-0000-0000-000000000000}
+template: {76036F5E-CBCE-46D1-AF0A-4143F9B557AA}
+templatekey: Sample Item
+
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {75577384-3C97-45DA-A847-81B00500E250}
+name: Title
+key: title
+content-length: 4
+
+Real
+----field----
+field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
+name: Text
+key: text
+content-length: 279
+
+Ale (CAMRA) is an independent voluntary consumer organisation based in St Albans, England, whose main aims are promoting real ale, real cider and the traditional British pub. It is now the largest single-issue consumer group in the UK,[1] and is a founding member of the European
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140509T174556
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140509T174556:635352543566347497

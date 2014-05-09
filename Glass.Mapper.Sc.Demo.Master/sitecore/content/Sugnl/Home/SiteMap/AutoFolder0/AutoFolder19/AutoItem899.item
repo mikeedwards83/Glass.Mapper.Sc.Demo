@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {03C58A07-CF51-4F85-8F90-A5AF828E2B3C}
+database: master
+path: /sitecore/content/Sugnl/Home/SiteMap/AutoFolder0/AutoFolder19/AutoItem899
+parent: {E303D672-F1A1-4A41-84E5-F66399198D11}
+name: AutoItem899
+master: {00000000-0000-0000-0000-000000000000}
+template: {76036F5E-CBCE-46D1-AF0A-4143F9B557AA}
+templatekey: Sample Item
+
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {75577384-3C97-45DA-A847-81B00500E250}
+name: Title
+key: title
+content-length: 3
+
+now
+----field----
+field: {A60ACD61-A6DB-4182-8329-C957982CEC74}
+name: Text
+key: text
+content-length: 136
+
+the largest single-issue consumer group in the UK,[1] and is a founding member of the European Beer Consumers Union (EBCU). The Campaign
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140509T174556
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140509T174556:635352543566347497

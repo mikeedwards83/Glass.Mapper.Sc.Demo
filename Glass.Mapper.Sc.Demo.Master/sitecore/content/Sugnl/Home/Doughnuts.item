@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {A751B451-325F-4A9A-AC4F-6576289CF36B}
+database: master
+path: /sitecore/content/Sugnl/Home/Doughnuts
+parent: {56778C19-24DE-43C9-865E-140EE02C976D}
+name: Doughnuts
+master: {00000000-0000-0000-0000-000000000000}
+template: {020C8626-B8BA-4351-92EB-D1FF45800A59}
+templatekey: Landing
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 361
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{9491EAA5-AB4B-4E0F-AD46-A0898C599308}"><r uid="{53671C7D-C72E-4877-806C-A82186C13B22}"><p:d /></r><r uid="{42037299-4BB3-4A54-AB3F-96B7AE7ECA95}" s:id="{4F4F05BC-3FFD-475B-BEB0-4E7944E455B1}" s:ph="main" /><r uid="{DA44ABCF-3946-4E1E-8762-3AAA53D23D36}"><p:d /></r></d></r>
+----version----
+language: en
+version: 1
+revision: 78305c42-2321-40d5-b252-0a5bd0d79697
+
+----field----
+field: {E279FB5A-76A4-4519-92B1-C6215717042A}
+name: IFeatureAbstract
+key: ifeatureabstract
+content-length: 103
+
+A doughnut or donut (see spelling differences) is a type of fried dough confectionery or dessert food. 
+----field----
+field: {BCA36A19-5BBD-4F18-8F7C-3D936018BA0E}
+name: IFeatureImage
+key: ifeatureimage
+content-length: 58
+
+<image mediaid="{D9975FDA-EB41-40E9-BF0B-CEAEB5BADFF0}" />
+----field----
+field: {8FB79BA2-269F-4266-B06E-463A7886ABB6}
+name: LandingContent
+key: landingcontent
+content-length: 6251
+
+A&nbsp;<strong style="color: #252525; font-family: sans-serif; font-size: 14px; line-height: 22.399999618530273px; background-color: #ffffff;">doughnut</strong>&nbsp;or&nbsp;<strong style="color: #252525; font-family: sans-serif; font-size: 14px; line-height: 22.399999618530273px; background-color: #ffffff;">donut</strong>&nbsp;(<a href="https://en.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">/</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">ˈ</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">d</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">oʊ</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">n</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">ə</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">t</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">/</a>&nbsp;or&nbsp;<a href="https://en.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">/</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">ˈ</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">d</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">oʊ</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">n</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">ʌ</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English#Key" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">t</a><a href="https://en.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English" style="color: #0b0080; background-image: none; text-decoration: none !important;">/</a>) (see&nbsp;<a href="https://en.wikipedia.org/wiki/Draught_and_draft" title="Draught and draft" class="mw-redirect" style="text-decoration: none; color: #0b0080; background-image: none; background-color: #ffffff; font-family: sans-serif; font-size: 14px; line-height: 22.399999618530273px;">spelling differences</a>) is a type of&nbsp;<a href="https://en.wikipedia.org/wiki/List_of_fried_dough_foods" title="List of fried dough foods" style="text-decoration: none; color: #0b0080; background-image: none; background-color: #ffffff; font-family: sans-serif; font-size: 14px; line-height: 22.399999618530273px;">fried dough</a>&nbsp;<a href="https://en.wikipedia.org/wiki/Confectionery" title="Confectionery" style="text-decoration: none; color: #0b0080; background-image: none; background-color: #ffffff; font-family: sans-serif; font-size: 14px; line-height: 22.399999618530273px;">confectionery</a>&nbsp;or&nbsp;<a href="https://en.wikipedia.org/wiki/Dessert" title="Dessert" style="text-decoration: none; color: #0b0080; background-image: none; background-color: #ffffff; font-family: sans-serif; font-size: 14px; line-height: 22.399999618530273px;">dessert</a>&nbsp;food. The doughnut is popular in many countries and prepared in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets, food stalls, and franchised specialty outlets. They are usually&nbsp;<a href="https://en.wikipedia.org/wiki/Deep_fried" title="Deep fried" class="mw-redirect" style="text-decoration: none; color: #0b0080; background-image: none; background-color: #ffffff; font-family: sans-serif; font-size: 14px; line-height: 22.399999618530273px;">deep-fried</a>&nbsp;from a flour dough, and typically either ring-shaped or without a hole and often filled. Other types of&nbsp;<a href="https://en.wikipedia.org/wiki/Batter_(cooking)" title="Batter (cooking)" style="text-decoration: none; color: #0b0080; background-image: none; background-color: #ffffff; font-family: sans-serif; font-size: 14px; line-height: 22.399999618530273px;">batters</a>&nbsp;can also be used, and various toppings and flavorings are used for different types, such as sugar, chocolate, or maple glazing. In addition to flour, doughnuts may also include such ingredients as water, leavening, eggs, milk, sugar, oil/shortening, natural flavors and/or artificial flavors.<sup id="cite_ref-1" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; color: #252525; font-family: sans-serif; background-color: #ffffff;"><a href="https://en.wikipedia.org/wiki/Jam_Doughnut#cite_note-1" style="text-decoration: none; color: #0b0080; background-image: none; white-space: nowrap;">[1]</a></sup><sup id="cite_ref-2" class="reference" style="line-height: 1; unicode-bidi: -webkit-isolate; color: #252525; font-family: sans-serif; background-color: #ffffff;"><a href="https://en.wikipedia.org/wiki/Jam_Doughnut#cite_note-2" style="text-decoration: none; color: #0b0080; background-image: none; white-space: nowrap;">[2]</a></sup><br />
+----field----
+field: {73F291BC-4098-4702-B0DA-8B0416751E81}
+name: IPageTitlesLongTitle
+key: ipagetitleslongtitle
+content-length: 20
+
+Jam filled Doughnuts
+----field----
+field: {ADF2C63C-D097-4AEC-B86F-571D772E441A}
+name: IPageTitleSubTitle
+key: ipagetitlesubtitle
+content-length: 35
+
+Because doughnuts don't have a hole
+----field----
+field: {04E95463-A928-4CC0-B855-FB9F341C2221}
+name: IPageTitlesShortTitle
+key: ipagetitlesshorttitle
+content-length: 13
+
+Jam Doughnuts
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140508T181645
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+78305c42-2321-40d5-b252-0a5bd0d79697
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140509T181421:635352560611820582
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

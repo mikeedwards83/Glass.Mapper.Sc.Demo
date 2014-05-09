@@ -67,6 +67,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libs\Glass\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
     </Reference>
+    <Reference Include="Glass.Mapper.Sc.Razor, Version=3.0.8.93, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Glass.Mapper.Sc.Razor.3.0.8.93-beta\lib\net45\Glass.Mapper.Sc.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.Razor.CastleWindsor">
+      <HintPath>..\packages\Glass.Mapper.Sc.Razor.CastleWindsor.3.0.2.6\lib\net45\Glass.Mapper.Sc.Razor.CastleWindsor.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MiniProfiler">
       <HintPath>..\packages\MiniProfiler.2.1.0\lib\net40\MiniProfiler.dll</HintPath>
@@ -74,6 +81,9 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\packages\RazorEngine.3.2.0\lib\net40\RazorEngine.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -168,6 +178,7 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
+    <Compile Include="App_Start\GlassMapperScRazor.cs" />
     <Compile Include="App_Start\MetroUICSSBundleConfig.cs" />
     <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\CommentsSearchController.cs" />
@@ -176,6 +187,13 @@
     <Compile Include="Controllers\TempController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Sugnl\WebFormsSublayout.ascx.cs">
+      <DependentUpon>WebFormsSublayout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Sugnl\WebFormsSublayout.ascx.designer.cs">
+      <DependentUpon>WebFormsSublayout.ascx</DependentUpon>
     </Compile>
     <Compile Include="Models\Controllers\CommentsSearch\CommentResult.cs" />
     <Compile Include="Models\Controllers\Comments\CommentForm.cs" />
@@ -187,8 +205,14 @@
     <Compile Include="Models\Parts\SiteMap.cs" />
     <Compile Include="Mvc\FormButtonAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Data\Packages\Glass.Mapper.Sc.Razor.Package.xml" />
+    <Content Include="Layouts\Sugnl\WebFormsLayout.aspx" />
+    <Content Include="Layouts\Sugnl\WebFormsSublayout.ascx" />
     <Content Include="Scripts\knockout-3.1.0.debug.js" />
     <Content Include="Scripts\knockout-3.1.0.js" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\BehindRazor.xml" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\DynamicRazor.xml" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\TypedRazor.xml" />
     <Content Include="Views\Sugnl\Parts\HomePageSpots.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -215,6 +239,9 @@
     <Content Include="App_Config\Include\Glass.Lucene.Index.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <Content Include="GlassRazor\Sugnl\Navigation.cshtml" />
+    <Content Include="Data\Packages\Glass.Mapper.Sc.Razor.Package.zip" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.Razor.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -222,8 +249,9 @@
     <Content Include="Scripts\metro-ui\metro.min.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="web.config" />
-    <Content Include="Views\Sugnl\Parts\Navigation.cshtml" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Search\Search.cshtml" />
     <Content Include="Views\Sugnl\Parts\PageTitle.cshtml" />
     <Content Include="Views\Sugnl\Partials\PageSpot.cshtml" />
@@ -233,6 +261,10 @@
     <Content Include="Views\Sugnl\Parts\Abstract.cshtml" />
     <Content Include="Views\RateBacon\Index.cshtml" />
     <Content Include="Views\Sugnl\Parts\Sitemap.cshtml" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\Templates\TypedRazorTemplate.cshtml.temp" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\Templates\DynamicRazorTemplate.cshtml.temp" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.temp" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.cs.temp" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -243,7 +275,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Layouts\Common\" />
-    <Folder Include="Layouts\Sugnl\" />
     <Folder Include="Sublayouts\" />
   </ItemGroup>
   <ItemGroup>

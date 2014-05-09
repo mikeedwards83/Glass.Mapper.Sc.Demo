@@ -12,36 +12,92 @@ templatekey: RateBacon
 ----version----
 language: en
 version: 1
-revision: 3e79e260-2abd-41db-9de2-c532f2d611a6
+revision: 22ed218c-cbaa-45da-89a6-16101f667a1b
 
 ----field----
 field: {5A87CC65-4510-4FF8-A358-EBDC284F7D1C}
 name: RateBaconImage1
 key: ratebaconimage1
-content-length: 58
+content-length: 83
 
-<image mediaid="{2B8012D1-4D03-4F67-A34A-ADBF12689984}" />
+<image height="426" width="640" mediaid="{2B8012D1-4D03-4F67-A34A-ADBF12689984}" />
 ----field----
 field: {79D2F3F9-A7A3-40CB-9E0D-0B1251E2902E}
 name: RateBaconImage2
 key: ratebaconimage2
-content-length: 58
+content-length: 83
 
-<image mediaid="{FFCC01C2-9065-404E-A8C8-664655476002}" />
+<image height="336" width="600" mediaid="{FFCC01C2-9065-404E-A8C8-664655476002}" />
 ----field----
 field: {AB61DEE9-6FCD-46FD-8B86-776556543DA0}
 name: RateBaconImage3
 key: ratebaconimage3
-content-length: 58
+content-length: 83
 
-<image mediaid="{CC8D48A1-857B-440A-BD6C-36CE03B6DD8F}" />
+<image height="258" width="196" mediaid="{CC8D48A1-857B-440A-BD6C-36CE03B6DD8F}" />
 ----field----
 field: {FE260F87-E7AC-49FC-A719-AAE2EC5BB05A}
 name: RateBaconImage4
 key: ratebaconimage4
-content-length: 58
+content-length: 83
 
-<image mediaid="{E855467C-9E93-433A-A7E5-38D30C6A1213}" />
+<image height="172" width="293" mediaid="{E855467C-9E93-433A-A7E5-38D30C6A1213}" />
+----field----
+field: {4652C5ED-1DD0-4BD6-A8F5-44F0E96BB362}
+name: RateBaconRate1
+key: ratebaconrate1
+content-length: 8
+
+4.045454
+----field----
+field: {6B47EB72-7E85-45A2-8B3B-54F6D4C53DE0}
+name: RateBaconRate2
+key: ratebaconrate2
+content-length: 8
+
+3.701299
+----field----
+field: {50D7DEEE-F99A-4C6C-BAFB-A534F724A90A}
+name: RateBaconRate3
+key: ratebaconrate3
+content-length: 1
+
+3
+----field----
+field: {1E6D4592-A5FA-4373-BEAF-5A5D9BF76241}
+name: RateBaconRate4
+key: ratebaconrate4
+content-length: 7
+
+2.93424
+----field----
+field: {E1D724B9-4E6D-4998-AC84-29D29D0CBAD3}
+name: RateBaconCount1
+key: ratebaconcount1
+content-length: 2
+
+23
+----field----
+field: {EAA38E7B-741B-4EEE-B8D4-1F1D5C0EAFCC}
+name: RateBaconCount2
+key: ratebaconcount2
+content-length: 2
+
+15
+----field----
+field: {A56F4168-A227-42C2-A6A1-D118647F8528}
+name: RateBaconCount3
+key: ratebaconcount3
+content-length: 1
+
+7
+----field----
+field: {FD23F899-8138-44F7-9B44-D5D5FFCAB633}
+name: RateBaconCount4
+key: ratebaconcount4
+content-length: 2
+
+15
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -69,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3e79e260-2abd-41db-9de2-c532f2d611a6
+22ed218c-cbaa-45da-89a6-16101f667a1b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140416T181807:635332690878536361
+20140429T075824:635343551044353775
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -84,3 +140,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
