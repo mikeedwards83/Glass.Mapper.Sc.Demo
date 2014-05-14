@@ -1671,6 +1671,7 @@ namespace Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.Concrete
 
 
 
+
 namespace Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Common.Interface
 {
 
@@ -2309,6 +2310,7 @@ namespace Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Common
 
 
 
+
 namespace Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.Interface
 {
 
@@ -2378,6 +2380,7 @@ namespace Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.Interface
 	}
 
 }
+
 
 
 
@@ -2627,6 +2630,71 @@ namespace Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.Concrete
 
 
 
+namespace Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.RenderingParameters
+{
+
+
+ 	/// <summary>
+	/// IPageTitles Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Sugnl/RenderingParameters/PageTitles</para>	
+	/// <para>ID: ec75f7a7-8a36-452c-9df8-d89babdbea88</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IPageTitlesConstants.TemplateIdString, Cachable = true )]
+	public partial interface IPageTitles : IGlassBase 
+	{
+								/// <summary>
+					/// The DisplaySubTitle field.
+					/// <para></para>
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: 910120f7-06ac-4cea-ac8b-f25e8aa309b6</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+					[SitecoreField(IPageTitlesConstants.DisplaySubTitleFieldName)]
+					bool DisplaySubTitle  {get; set;}
+			
+				}
+
+
+	public static partial class IPageTitlesConstants{
+
+			public const string TemplateIdString = "ec75f7a7-8a36-452c-9df8-d89babdbea88";
+			public static readonly ID TemplateId = new ID(TemplateIdString);
+			public const string TemplateName = "PageTitles";
+
+					
+			public static readonly ID DisplaySubTitleFieldId = new ID("910120f7-06ac-4cea-ac8b-f25e8aa309b6");
+			public const string DisplaySubTitleFieldName = "DisplaySubTitle";
+			
+			
+
+	}
+
+	
+	/// <summary>
+	/// PageTitles
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Sugnl/RenderingParameters/PageTitles</para>	
+	/// <para>ID: ec75f7a7-8a36-452c-9df8-d89babdbea88</para>	
+	/// </summary>
+	[SitecoreType(TemplateId=IPageTitlesConstants.TemplateIdString, Cachable = true)]
+	public partial class PageTitles  : GlassBase, IPageTitles 
+	{
+	   
+						/// <summary>
+				/// The DisplaySubTitle field.
+				/// <para></para>
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 910120f7-06ac-4cea-ac8b-f25e8aa309b6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IPageTitlesConstants.DisplaySubTitleFieldName)]
+				public virtual bool DisplaySubTitle  {get; set;}
+					
+			
+	}
+}
 
 
 

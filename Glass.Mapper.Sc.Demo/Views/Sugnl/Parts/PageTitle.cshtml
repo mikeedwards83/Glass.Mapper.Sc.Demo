@@ -1,9 +1,16 @@
-﻿@using Glass.Mapper.Sc.Web.Mvc
+﻿@using Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Sugnl.RenderingParameters
+@using Glass.Mapper.Sc.Web.Mvc
+@using Sitecore.Mvc
 @inherits GlassView<Glass.Mapper.Sc.Demo.Core.Models.sitecore.templates.Common.Interface.IPageTitles>
+
+@{ var renderingParams = GetRenderingParameters<PageTitles>();}
+
 <h1>
     @Editable(x=>x.IPageTitlesLongTitle)
-    @if (!string.IsNullOrEmpty(Model.IPageTitleSubTitle) || IsInEditingMode)
+    @if ((!string.IsNullOrEmpty(Model.IPageTitleSubTitle) && renderingParams.DisplaySubTitle) || IsInEditingMode)
     {
         <small class="on-right"> @Editable(x=>x.IPageTitleSubTitle)</small>
     }
 </h1>
+
+
