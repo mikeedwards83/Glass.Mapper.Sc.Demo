@@ -8,7 +8,6 @@ using Glass.Mapper.Sc.Configuration.Attributes;
 using Glass.Mapper.Sc.Configuration.Fluent;
 using Glass.Mapper.Sc.Fields;
 using Sitecore.Globalization;
-using Sitecore.Publishing.PublishingInformation;
 
 namespace Glass.Mapper.Sc.Demo.Core.Fields
 {

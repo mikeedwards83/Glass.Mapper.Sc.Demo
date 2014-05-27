@@ -35,7 +35,7 @@
     <SitecoreWebUrl>http://demo.glass</SitecoreWebUrl>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
-    <SitecoreDeployFolder>c:\sitecore\demo.glass\website</SitecoreDeployFolder>
+    <SitecoreDeployFolder>e:\sitecore\demo.glass\website</SitecoreDeployFolder>
     <SitecoreAccessGuid>c79ffd0c-0e51-4664-b0fe-4865ef663b6c</SitecoreAccessGuid>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\Glass.Mapper.Sc.Demo.Master_Debug.xml</ValidationSettingsFilePath>

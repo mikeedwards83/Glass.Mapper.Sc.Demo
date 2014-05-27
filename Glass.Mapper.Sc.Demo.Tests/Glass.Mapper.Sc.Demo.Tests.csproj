@@ -52,7 +52,7 @@
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
-      <HintPath>..\..\HedgehogStagingCodeDeployment\Hedgehog\libs\Sitecore\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\Libs\Sitecore\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
